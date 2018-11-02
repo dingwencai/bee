@@ -24,6 +24,6 @@ public class Utils {
     }
 
     public static String getPropertiesValue(String key){
-        return properties.getProperty("key");
+        return properties.getProperty(key);
     }
 }
