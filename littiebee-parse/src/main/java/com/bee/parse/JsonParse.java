@@ -8,7 +8,7 @@ import java.io.*;
 public class JsonParse {
 
     public static void main(String[] args) {
-        File file = new File("C:\\Users\\Administrator\\Desktop\\1.txt");
+        File file = new File("./test.txt");
         try {
             int count = 0;
             BufferedReader bfr = new BufferedReader(new InputStreamReader(new FileInputStream(file)));
@@ -17,8 +17,8 @@ public class JsonParse {
                 String[] array = line.split("\\t");
                 JSONObject obj = JSON.parseObject(array[1]);
                 int q = Integer.parseInt(array[0]);
-                int a = Integer.parseInt(obj.get("a").toString());
-                int c = Integer.parseInt(obj.get("c").toString());
+                int a = Integer.parseInt(obj.get("a_quantity").toString());
+                int c = Integer.parseInt(obj.get("c_quantity").toString());
                 count += q * (a + c);
             }
 
