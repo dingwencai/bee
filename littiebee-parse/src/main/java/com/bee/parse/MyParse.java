@@ -17,6 +17,9 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+/***
+ * 将一个文件夹递归遍历，解析所有 xml 文件
+ */
 public class MyParse {
 
     public static int num = 0;
