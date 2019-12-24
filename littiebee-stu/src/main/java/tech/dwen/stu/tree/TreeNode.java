@@ -4,17 +4,17 @@ public class TreeNode {
     /**
      * 节点值
      */
-    int val;
+    private int val;
 
     /**
      * 左子树
      */
-    TreeNode left;
+    private TreeNode left;
 
     /**
      * 右子树
      */
-    TreeNode right;
+    private TreeNode right;
 
     TreeNode(int x) {
         val = x;
