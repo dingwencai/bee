@@ -1,31 +1,21 @@
-package tech.dwen.stu.tree;
+package tech.dwen.stu.sword;
 
 public class TreeNode {
-    /**
-     * 节点值
-     */
-    private int val;
 
-    /**
-     * 左子树
-     */
+    private Integer value;
     private TreeNode left;
-
-    /**
-     * 右子树
-     */
     private TreeNode right;
 
-    TreeNode(int x) {
-        val = x;
+    public TreeNode(Integer value){
+        this.value = value;
     }
 
-    public int getVal() {
-        return val;
+    public Integer getValue() {
+        return value;
     }
 
-    public void setVal(int val) {
-        this.val = val;
+    public void setValue(Integer value) {
+        this.value = value;
     }
 
     public TreeNode getLeft() {

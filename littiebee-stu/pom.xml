@@ -11,5 +11,12 @@
 
     <artifactId>littiebee-stu</artifactId>
 
+    <dependencies>
+        <dependency>
+            <artifactId>fastjson</artifactId>
+            <groupId>com.alibaba</groupId>
+            <version>1.2.28</version>
+        </dependency>
+    </dependencies>
 
 </project>
