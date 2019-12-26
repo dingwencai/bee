@@ -2,7 +2,7 @@ package tech.dwen.stu.thread;
 
 /**
  * Thread 的 join 方法
- * t.join(); 当前线程等待 t 线程执行完成
+ * t.join(); 当前线程阻塞，等待 t 线程执行完成
  */
 public class T4 {
 
