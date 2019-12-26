@@ -5,6 +5,9 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
+/**
+ * 层次打印二叉树
+ */
 public class T32 {
 
     public static void main(String[] args) {
@@ -32,7 +35,7 @@ public class T32 {
             if (value == null) {
                 System.out.println("");
             } else {
-                System.out.print(value);
+                System.out.print(value+" ");
             }
         });
 
@@ -42,7 +45,6 @@ public class T32 {
         List<TreeNode> list = new ArrayList<>();
 
         Queue<TreeNode> queue = new LinkedList<>();
-        queue.add(root);
 
         Queue<TreeNode> queueNowRow = new LinkedList<>();
         queueNowRow.add(root);
