@@ -11,4 +11,14 @@ public class T1 {
       n++;
     }
 
+    public static void main(String[] args) {
+        T1 o = new T1();
+
+        for(int i = 0; i < 10 ; i++) {
+            new Thread(()->{
+                o.add();
+            },"").start();
+        }
+    }
+
 }
