@@ -7,6 +7,7 @@ public class T {
     private static long count = 0;
 
     public void test() {
+        //
         synchronized (o) {
 
             for (int j = 0; j < 1000_0000; j++) {
